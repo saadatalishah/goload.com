@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   
+</head>
+    <body>
+    <script src="sign.js"></script>
+      
+        <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyAmAU6idYTwdakb2MU9ZVydTnQbH8ZPh3E",
+    authDomain: "login-ed82d.firebaseapp.com",
+    databaseURL: "https://login-ed82d.firebaseio.com",
+    projectId: "login-ed82d",
+    storageBucket: "login-ed82d.appspot.com",
+    messagingSenderId: "1068036882255",
+    appId: "1:1068036882255:web:2c709bd7b6216176"
+  };// Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database=firebase.database().ref('/'); 
+      </script>
+  
+           
+      <center> <div class="parent">
+             <div class="image">
+               <h3>SIGN UP</h3>
+             </div>
+        <form action="">
+          <div class="form">
+            <div class="insideForm">
+             <i class="far fa-id-badge"></i><input type="text" name="" id="n.inp" placeholder="USERNAME"><br><br>
+            </div>
+            <div class="insideForm">
+             <i class="fas fa-envelope"></i><input type="email" name="" id="p.inp" placeholder="EMAIL"><br><br>
+            </div>
+            <div class="insideForm">
+             <i class="fas fa-unlock-alt"></i><input type="password" name="" id="e.inp" placeholder="PASSWORD"><br><br>
+            </div>
+            <div class="insideForm">
+             <i class="fas fa-unlock-alt"></i><input type="password" name="" id="re.inp" placeholder="RETYPE-PASSWORD"><br><br>
+            </div>
+          </div>
+        </form>
+        <button onclick="local()">SIGNUP</button>
+       </div> </center>
+      </body>

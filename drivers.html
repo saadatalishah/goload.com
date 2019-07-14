@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> GO DRIVERS</title>
+    <link rel="stylesheet" href="drivers.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAc0FxGfVR8XfvbeDd0aWM0qFDq38wp9Lg",
+    authDomain: "event-app-53970.firebaseapp.com",
+    databaseURL: "https://event-app-53970.firebaseio.com",
+    projectId: "event-app-53970",
+    storageBucket: "",
+    messagingSenderId: "898527593903"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+   <!-- <input type="button"  id="storing-data" onclick="myfunc()" name="store" value="store data"> -->
+
+
+  <div class="nav-bar"onclick="highlight2()" id='nav-bar'  >
+    <div id="active1">
+      <a  href="#" class="active-truck" onclick="highlight1()">
+          <i class="fas fa-truck-pickup"></i>
+        </a>
+      </div>
+      <div onclick="highlight2()" id="active2">
+    <a href="#"class="mini-truck">
+      <i class="fas fa-truck"></i>
+    </a>
+  </div>
+  <div>
+    <a  href="signin.html"class="mini-truck" onclick="highlight3()" >
+      <i class="fas fa-industry" id="industryicon"></i>
+    </a>
+  </div>
+  </div>
+ <center> <div id="user-form">
+    <h2>BOOKING FORM</h2>
+      <form class="userform1" action="">
+          <input type="text" placeholder="USERNAME" id="username" class="form"><br><br>
+          <input type="text" placeholder="EXACT ADDRESS" id="address" class="form"><br><br>
+          <input type="text" placeholder="REG PLATE" id="driver" class="form">
+          <input type="text" placeholder="USER-PHONE NUMBER" id="phone" class="form"><br><br>
+          <input type="number" placeholder="NUMBER OF FURNITURE ITEMS" id="items" class="form">
+          <input type="text" placeholder="category of truck" id="category" class="form"><br><br>
+          <input type="text" placeholder="DISTANCE IN KILOMETER" class="form" id="distance">
+          <input type="date" placeholder="SERVICE DATE" class="form" id="date"><br><br>
+          
+      </form>
+      <button class="userform-btn" onclick="booking()">GO</button>
+  </div></center>
+
+    <div id="display-order">
+       <center> <h2>SNAPSHOT THIS TICKET</h2></center>
+        USERNAME:<p id="o.username">hello</p><br><br> DRIVER_NO_PLATE:<p id="o.driver">world</p><br>
+        ADDRESS:<p id="o.address">D-111 Khekeseha homes gulzar-e-hijri scheme 33</p><br><br>
+        FURNITURE ITEMS:<p id="o.items">you</p>
+         ORDER-NUMBER:<p id="order_id">1234567890</p><br><br><center> CALC_FARE:<p id="o.phone">are</p></center>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
